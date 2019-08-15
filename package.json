@@ -1,0 +1,11 @@
+{
+  "name": "graphql-rezeta-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "sequelize": "^5.15.0",
+    "sequelize-cli": "^5.5.0",
+    "sqlite3": "^4.0.9"
+  }
+}
