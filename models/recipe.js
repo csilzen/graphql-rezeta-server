@@ -1,9 +1,18 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Recipe = sequelize.define('Recipe', {
-    title: DataTypes.STRING,
-    ingredients: DataTypes.TEXT,
-    direction: DataTypes.TEXT
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    ingredients: {
+      tyle: DataTypes.STRING,
+      allowNull: false
+    },
+    direction: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   }, {});
   Recipe.associate = function(models) {
     // associations can be defined here

@@ -2,11 +2,11 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Recipes', {
-      id: {
+      userId: {
         allowNull: false,
-        autoIncrement: true,
-        primaryKey: true,
-        type: Sequelize.INTEGER
+        // autoIncrement: true,
+        // primaryKey: true,
+        type: Sequelize.INTEGER.UNSIGNED
       },
       title: {
         allowNull: false,
@@ -14,7 +14,7 @@ module.exports = {
       },
       ingredients: {
         allowNull: false,
-        type: Sequelize.TEXT
+        type: Sequelize.STRING
       },
       direction: {
         allowNull: false,
